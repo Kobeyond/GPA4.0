@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp">
+    <TextView
+        android:id="@+id/my_comment_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:text="time..."/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/my_comment_stars"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="5dp"
+        android:text="stars"/>
+    <ImageView
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        app:srcCompat="@drawable/ic_thumb_24dp"
+        android:layout_marginRight="3dp"
+        android:layout_toLeftOf="@id/my_comment_stars"
+        android:id="@+id/imageView" />
+
+    <LinearLayout
+        android:id="@+id/my_comment_object"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:padding="10dp"
+        android:layout_below="@id/my_comment_time"
+        android:background="#FFDDDDDD"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#FF222222"
+                android:text="引用 @"/>
+            <TextView
+                android:id="@+id/my_comment_author"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#FF0099FF"
+                android:text="xxx"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#FF222222"
+                android:text=" 发表的"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/my_comment_article"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textColor="#FF999999"
+            android:text="内容..."/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/my_comment_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:textColor="#FF222222"
+        android:layout_below="@id/my_comment_object"
+        android:text="回复内容..."/>
+
+    <TextView
+        android:id="@+id/file_line"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="15dp"
+        android:layout_below="@id/my_comment_content"
+        android:background="#FFDDDDDD"/>
+
+</RelativeLayout>

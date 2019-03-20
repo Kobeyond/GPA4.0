@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity">
+
+    <item android:id="@+id/toolbar_publish"
+        android:orderInCategory="80"
+        android:title="发表"
+        android:icon="@drawable/ic_toolbar_publish_24dp"
+        app:showAsAction="ifRoom" />
+
+    <item android:id="@+id/toolbar_clear"
+        android:title="清除"
+        android:orderInCategory="100"
+        android:icon="@drawable/ic_toolbar_clear_24dp"
+        app:showAsAction="never"/>
+
+</menu>

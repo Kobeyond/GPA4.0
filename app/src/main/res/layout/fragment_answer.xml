@@ -1,0 +1,147 @@
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.gpa_plus.QuestionFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp">
+
+        <EditText
+            android:id="@+id/answer_title_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="9dp"
+            android:background="@null"
+            android:hint="来个标题"
+            android:textColorHint="#FFAAAAAA"
+            android:textSize="19dp" />
+
+        <TextView
+            android:id="@+id/answer_line1"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@id/answer_title_text"
+            android:background="#FFDDDDDD" />
+
+        <EditText
+            android:id="@+id/answer_detail_text"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_below="@id/answer_line1"
+            android:layout_margin="10dp"
+            android:background="@null"
+            android:gravity="top"
+            android:hint="不吐不快，请详细写下你遇到的学习问题吧！"
+            android:textColorHint="#FFAAAAAA"
+            android:textSize="17dp" />
+
+        <TextView
+            android:id="@+id/answer_line4"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@id/answer_detail_text"
+            android:background="#FFDDDDDD" />
+
+        <LinearLayout
+            android:id="@+id/answer_label_tag"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/answer_line4"
+            android:layout_margin="10dp"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginLeft="5dp"
+                app:srcCompat="@drawable/ic_item_article_label_24dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="学科标签" />
+            <!--将背景色设置为透明可以消除系统自带的小三角形，消除之前大量的空白。从而缩短整个控件的长度-->
+            <Spinner
+                android:id="@+id/answer_tag_spinner1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="-1dp"
+                android:background="@android:color/transparent"
+                android:dropDownVerticalOffset="25dp"
+                android:spinnerMode="dropdown" />
+
+            <EditText
+                android:id="@+id/answer_course_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="课程名称"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="1dp"
+                android:textColorHint="#FFAAAAAA"
+                android:textSize="14dp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/answer_line2"
+            android:layout_width="match_parent"
+            android:layout_height="8dp"
+            android:layout_below="@id/answer_label_tag"
+            android:background="#FFDDDDDD" />
+
+        <LinearLayout
+            android:id="@+id/answer_add_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/answer_line2"
+            android:layout_margin="10dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/answer_choose_photo_btn"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="13dp"
+                android:src="@drawable/addphoto" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="添加照片/附件"
+                android:textColor="#FF222222"
+                android:textSize="18dp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/answer_line3"
+            android:layout_width="match_parent"
+            android:layout_height="8dp"
+            android:layout_below="@id/answer_add_layout"
+            android:background="#FFDDDDDD" />
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/floatingActionButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/answer_line3"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="-20dp"
+            app:srcCompat="@drawable/ic_toolbar_publish_24dp"
+            app:borderWidth="0dp"
+            app:backgroundTint="#EE7942"
+            app:rippleColor="#33728dff"
+            app:elevation="8dp"
+            app:pressedTranslationZ="16dp"
+            />
+    </RelativeLayout>
+
+
+</FrameLayout>

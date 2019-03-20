@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--这是spinner未展开时，文字显示布局，这里边id必须是  android:id="@android:id/text1"，-->
+<!--因为源代码中spinner的textView的id就是这个，如果不这样设置，无法改变spinner的样式-->
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+
+
+    android:id="@android:id/text1"
+    android:textColor="#000000"
+    android:gravity="center"
+    android:paddingTop="5dp"
+    android:textSize="14dp"
+    android:singleLine="true"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:ellipsize="marquee"
+    android:drawableRight="@drawable/ic_triangle_24dp"
+    />

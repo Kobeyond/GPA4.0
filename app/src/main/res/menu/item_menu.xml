@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group
+        android:id="@+id/group1"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/questions"
+            android:icon="@drawable/ic_questions_24dp"
+            android:checkable="true"
+            android:title="我的提问"/>
+
+        <item
+            android:id="@+id/answers"
+            android:icon="@drawable/ic_answers_24dp"
+            android:title="我的回答"/>
+
+        <item
+            android:id="@+id/like"
+            android:icon="@drawable/ic_like_24dp"
+            android:title="我的收藏"/>
+    </group>
+
+    <group
+        android:id="@+id/group2"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/help"
+            android:icon="@drawable/ic_help_24dp"
+            android:title="帮助"/>
+        <item
+            android:id="@+id/logout"
+            android:icon="@drawable/ic_exit_24dp"
+            android:title="注销"/>
+    </group>
+
+
+</menu>

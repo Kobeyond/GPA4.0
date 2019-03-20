@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:title="首页" />
+
+    <item
+        android:id="@+id/navigation_index"
+        android:icon="@drawable/ic_material_24dp"
+        android:title="资料" />
+
+    <item
+        android:id="@+id/navigation_answer"
+        android:icon="@drawable/ic_border_color_black_24dp"
+        android:title="提问" />
+
+</menu>

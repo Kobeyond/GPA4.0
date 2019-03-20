@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="-5dp"
+    android:padding="5dp">
+
+    <RelativeLayout
+        android:id="@+id/detail_comment_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/detail_comment_head"
+            android:layout_margin="7dp"
+            android:layout_width="35dp"
+            android:layout_height="35dp"  />
+        <TextView
+            android:id="@+id/detail_comment_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/detail_comment_head"
+            android:layout_centerVertical="true"
+            android:layout_margin="3dp"
+            android:textSize="14dp"
+            android:textColor="#FF444444"
+            android:text="答主id"/>
+
+        <ImageView
+            android:id="@+id/detail_comment_sex"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/detail_comment_name"
+            android:src="@drawable/man"/>
+        <TextView
+            android:id="@+id/detail_comment_floor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_margin="7dp"
+            android:text="#21"/>
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/detail_comment_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/detail_comment_layout"
+        android:layout_marginLeft="55dp"
+        android:layout_marginRight="25dp"
+        android:textSize="15dp"
+        android:textColor="#FF444444"
+        android:text="回复内容..."/>
+    <ImageView
+        android:id="@+id/detail_comment_photo"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="5dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/detail_comment_content"/>
+
+
+    <TextView
+        android:id="@+id/detail_comment_thumb_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/detail_comment_photo"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="5dp"
+        android:text="5"/>
+    <ImageView
+        android:id="@+id/detail_comment_thumb"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        app:srcCompat="@drawable/ic_thumb_24dp"
+
+        android:layout_below="@id/detail_comment_photo"
+        android:layout_toLeftOf="@id/detail_comment_thumb_count"
+        android:layout_margin="5dp"
+        />
+    <TextView
+        android:id="@+id/file_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="10dp"
+        android:layout_below="@id/detail_comment_thumb"
+        android:background="#FFDDDDDD"/>
+</RelativeLayout>

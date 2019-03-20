@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp">
+
+    <ImageView
+        android:id="@+id/file_image"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_margin="8dp"/>
+    <TextView
+        android:id="@+id/file_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/file_image"
+        android:layout_marginTop="10dp"
+        android:textSize="16dp"
+        android:textColor="#FF444444"
+        android:text="电子科技大学四六级模拟题"/>
+
+    <TextView
+        android:id="@+id/file_line"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/file_image"
+        android:background="#FFDDDDDD"/>
+
+    <TextView
+        android:id="@+id/file_source_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/file_image"
+        android:layout_above="@id/file_line"
+        android:layout_marginBottom="7dp"
+        android:text="来自 "/>
+
+    <TextView
+        android:id="@+id/file_source"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/file_source_1"
+        android:layout_above="@id/file_line"
+        android:textColor="#FF0099FF"
+        android:layout_marginBottom="7dp"
+        android:text="K"/>
+
+
+    <TextView
+        android:id="@+id/file_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_above="@id/file_line"
+        android:layout_marginBottom="7dp"
+        android:layout_marginRight="15dp"
+        android:text="07-11"/>
+
+
+</RelativeLayout>
