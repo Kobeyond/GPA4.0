@@ -12,11 +12,16 @@ My app mainly consists of four parts:
 
 2.`AskHelp`: While sometimes if you are stuck in some problems, just write down your problems, together with some detailed informations(such as description and photo). What you need is to wait for help!
 
-<table><tr style="text-align:center">
-<td table style="border-collapse:collapse； display:inline-table;"><img width="350" height="696" src="https://github.com/Kobeyond/GPA4.0/blob/master/screenshot/mainpage.jpg"/></td>
-<td table style="border-collapse:collapse； display:inline-table;"><img width="350" height="696" src="https://github.com/Kobeyond/GPA4.0/blob/master/screenshot/ask_help.jpg"/></td> 
+<table><tr>
+<td><img width="370" height="735" src="https://github.com/Kobeyond/GPA4.0/blob/master/screenshot/mainpage.jpg"/></td>
+<td><img width="370" height="735" src="https://github.com/Kobeyond/GPA4.0/blob/master/screenshot/ask_help.jpg"/></td> 
 </tr></table>
 
 3.`Materials`: You know, it often takes a long time to collect materials(such as PPT, test papers) before the final exams. Now, GPA4.0+ provides all kinds of learning materials. You can get it totally for free!
 
 4.`Me`: Same as other common apps, you can manage your personal information here. What's more, all your history of asking for help and providing help is recorded here.
+
+<table><tr>
+<td><img width="370" height="735" src="https://github.com/Kobeyond/GPA4.0/blob/master/screenshot/material.jpg"/></td>
+<td><img width="370" height="735" src="https://github.com/Kobeyond/GPA4.0/blob/master/screenshot/me.jpg"/></td> 
+</tr></table>
